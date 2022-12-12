@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <script src="./index.js" defer></script>
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  
+  
+</head>
+
+<body class=" max-w-[1440px] mx-auto flex flex-col justify-start items-center gap-[75px]">
+  
+  <nav id="navBar" class="mt-[40px]  w-full flex justify-between max-[750px]:items-start items-center px-[27px] min-[751px]:px-[100px]">
+    <i><img src="./images/logo-bookmark.svg" alt="bookmark-logo"></i>
+    <i id="hamburgerMenu" class="min-[750px]:hidden mt-[10px]" ><img src="./images/icon-hamburger.svg" alt="menu-icon"></i>
+    
+    <ul id="links"  class="max-[750px]:invisible  max-[750px]:absolute top-[100px] left-0  max-[750px]:w-full flex max-[750px]:flex-col  justify-start min-[750px]:gap-[40px]  items-center max-[750px]:text-2xl px-[27px] max-[750px]:text-white text-black">
+    
+      <li class="max-[750px]:w-full text-center max-[750px]:border-y-[1px] border-slate-300 py-[15px]"><a href="#">Features</a></li>
+      <li class="max-[750px]:w-full text-center max-[750px]:border-b-[1px] border-slate-300 py-[15px]"><a href="#">Pricing</a></li>
+      <li class="max-[750px]:w-full text-center max-[750px]:border-b-[1px] border-slate-300 py-[15px]"><a href="#">Contact</a></li>
+      <button class=" max-[750px]:w-full max-[750px]:mt-[20px] max-[750px]:border-white max-[750px]:border-[2px] max-[750px]:hover:bg-white max-[750px]:hover:text-black rounded-lg py-[10px] min-[751px]:text-white min-[751px]:px-[30px]  min-[751px]:bg-red-400 min-[751px]:hover:bg-red-300">Login</button>
+    </ul>
+    
+    <span id="socialSites" class="invisible absolute bottom-[50px] left-0 w-full flex justify-center items-center gap-[50px] min-[751px]:hidden">
+      <img src="./images/icon-facebook.svg" alt="facebook-link-logo">
+      <img src="./images/icon-twitter.svg" alt="twitter-link-logo">
+    </span>
+  
+  </nav>
+
+  <header class="w-full flex max-[750px]:flex-col-reverse justify-start items-center gap-[55px] ">
+    <section class=" w-full min-[751px]:w-1/2 text-center px-[27px] min-[751px]:text-left min-[751px]:px-[100px]">
+      <h1 class=" w-full  text-3xl font-bold text-[#0a0a24]">A Simple Bookmark Manager</h1>
+      <p class=" w-full  text-slate-400 my-[25px]">
+        A clean and simple interface to organize your favourite websites. Open a new
+        browser tab and see your sites load instantly. Try it for free.
+      </p>
+      <div class="  flex max-[750px]:justify-center justify-start  gap-[15px] mt-[35px]">
+        <button class=" w-[155px] h-[47px] rounded-md text-center text-[.9em] text-white font-bold bg-blue-600 hover:bg-blue-500">Get it on Chrome</button>
+      <button class=" w-[155px] h-[47px] rounded-md text-center text-[.9em] text-black font-bold bg-slate-100 hover:bg-slate-300 shadow-lg">Get it on Firefox</button>
+      </div>
+      
+    </section>
+    <div class="w-full min-[751px]:w-1/2 relative flex justify-center">
+      <img class=" block min-w-[360px]" src="./images/illustration-hero.svg" alt="illustration of tab">
+      <div class=" absolute top-[55px] right-0 w-[270px] h-[210px] bg-blue-600 rounded-l-[50%] z-[-1]"></div>
+    </div>
+    
+  </header>
+
+
+  <article class=" w-full flex flex-col justify-center items-center gap-[50px] ">
+    <header class="w-full min-[751px]:w-1/2 text-center px-[27px]  min-[751px]:px-[100px] mt-[70px]">
+      <h1 class=" text-2xl font-bold text-[#0a0a2b]">Features</h1>
+      <p class=" w-full  text-slate-400 mt-[15px]">
+        Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+    </header>
+
+    <main class=" w-full flex flex-col justify-start items-center gap-[70px] text-center">
+      <dl id="tabs" class=" w-full  min-[751px]:w-1/2 flex max-[750px]:flex-col justify-start items-center px-[27px] max-[750px]:border-b-[1px] border-slate-300">
+        <dt class=" cursor-pointer w-full px-[10px] py-[14px] border-b-[1px] border-slate-300">Simple Bookmarking</dt>
+        <dt class=" cursor-pointer w-full py-[14px] border-b-[1px] border-slate-300">Speedy Searching</dt>
+        <dt class=" cursor-pointer w-full py-[14px] border-b-[1px] border-slate-300">Easy Sharing</dt>
+      </dl>
+
+      <div id="features" class="w-full flex flex-col justify-start items-center gap-[70px]">
+        <section class=" w-full text-center min-[751px]:text-left min-[751px]:flex min-[751px]:justify-start min-[751px]:items-center  ">
+          <div class="w-full relative flex justify-center">
+            <img class=" block min-w-[310px]"  src="./images/illustration-features-tab-1.svg" alt="illustration">
+            <div class=" absolute top-[30px] left-0 w-[310px] h-[210px] bg-blue-600 rounded-r-[50%] z-[-1]"></div>
+          </div>
+  
+            <main class="max-[750px]:px-[27px] max-[750px]:mt-[83px]">
+              <h1 class=" text-2xl font-bold text-[#0a0a2b]">Bookmark in one click</h1>
+  
+            <p class=" w-full  text-slate-400 mt-[15px]">Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.</p>
+  
+          <button class="max-[750px]:hidden  w-[155px] h-[47px] rounded-md text-center text-[.9em] text-white font-bold bg-blue-600 hover:bg-blue-500 shadow-lg mt-[50px]">More Info</button>
+            </main>
+          
+        </section>
+  
+        <section class=" w-full text-center  hidden">
+          <div class="w-full relative flex justify-center">
+            <img class=" block min-w-[310px]"  src="./images/illustration-features-tab-2.svg" alt="illustration2">
+            <div class=" absolute top-[75px] left-0 w-[310px] h-[210px] bg-blue-600 rounded-r-[50%] z-[-1]"></div>
+          </div>
+  
+          <main class="max-[750px]:px-[27px] max-[750px]:mt-[83px]">
+            <h1 class=" text-2xl font-bold text-[#0a0a2b]">Intelligent search</h1>
+          <p class=" w-full  text-slate-400 mt-[15px]">Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.</p>
+  
+          <button class="max-[750px]:hidden  w-[155px] h-[47px] rounded-md text-center text-[.9em] text-white font-bold bg-blue-600 hover:bg-blue-500 shadow-lg mt-[50px]">More Info</button>
+          </main>
+          
+        </section>
+  
+        <section class=" w-full text-center hidden  ">
+          <div class="w-full relative flex justify-center">
+            <img class=" block min-w-[325px]"  src="./images/illustration-features-tab-3.svg" alt="illustration3">
+            <div class=" absolute top-[75px] left-0 w-[310px] h-[210px] bg-blue-600 rounded-r-[50%] z-[-1]"></div>
+          </div>
+          
+          <main class="max-[750px]:px-[27px] max[750px]:mt-[83px]">
+            <h1 class=" text-2xl font-bold text-[#0a0a2b]">Share your bookmarks</h1>
+          <p class="  text-slate-400 mt-[15px]">Easily share your bookmarks and collections with others. Create a shareable
+            link that you can send at the click of a button.</p>
+  
+          <button class="max-[750px]:hidden  w-[155px] h-[47px] rounded-md text-center text-[.9em] text-white font-bold bg-blue-600 hover:bg-blue-500 shadow-lg mt-[50px]">More Info</button>
+          </main>
+          
+        </section>
+      </div>
+
+      
+    </main>
+
+  </article>
+
+  <section class="w-full  mt-[80px] text-center flex flex-col justify-start items-center gap-[50px] px-[27px] ">
+    <header class="w-full min-[751px]:w-1/2 min-[751px]:px-[50px]">
+      <h1 class="text-2xl font-bold text-[#0a0a2b]">Download the extension</h1>
+
+      <p class=" text-slate-400 mt-[15px]">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.</p>
+    </header>
+
+    <main class="w-full  px-[20px] flex max-[750px]:flex-col justify-start max-[750px]:items-center gap-[50px]">
+      <section class="  w-full flex flex-col justify-start items-center shadow-lg rounded-lg">
+        <img class="mt-[40px]" src="./images/logo-chrome.svg" alt="chrome-logo">
+        <h1 class=" mt-[30px] text-xl font-bold">Add to Chrome</h1>
+        <p class="w-full border-dotted border-b-[4px] border-slate-200 text-center text-sm text-slate-400 pb-[35px] mt-[5px]">Minimum version 62</p>
+        <button class="my-[25px] bg-blue-600 hover:bg-blue-500 px-[40px] py-[13px] rounded-lg text-white text-sm font-bold">Add & Install Extension</button>
+      </section>
+
+      <section class="align-middle w-full  flex flex-col justify-start items-center shadow-lg rounded-lg">
+        <img class="mt-[40px]" src="./images/logo-firefox.svg" alt="firefox-logo">
+        <h1 class=" mt-[30px] text-xl font-bold">Add to Firefox</h1>
+        <p class="w-full border-dotted border-b-[4px] border-slate-200 text-center text-sm text-slate-400 pb-[35px] mt-[5px]">Minimum version 55</p>
+        <button class="my-[25px] bg-blue-600 hover:bg-blue-500 px-[40px] py-[13px] rounded-lg text-white text-sm font-bold">Add & Install Extension</button>
+      </section>
+
+      <section class="align-bottom w-full flex flex-col justify-start items-center shadow-lg rounded-lg">
+        <img class="mt-[40px]" src="./images/logo-opera.svg" alt="opera-logo">
+        <h1 class=" mt-[30px] text-xl font-bold">Add to Opera</h1>
+        <p class="w-full border-dotted border-b-[4px] border-slate-200 text-center text-sm text-slate-400 pb-[35px] mt-[5px]">Minimum version 46</p>
+        <button class="my-[25px] bg-blue-600 hover:bg-blue-500 px-[40px] py-[13px] rounded-lg text-white text-sm font-bold">Add & Install Extension</button>
+      </section>
+    </main>
+  </section>
+
+  <section class="w-full mt-[80px] text-center flex flex-col justify-start items-center gap-[50px] px-[27px] ">
+    <header  class="w-full min-[751px]:w-1/2">
+
+      <h1 class="text-2xl font-bold text-[#0a0a2b]">Frequently Asked Questions</h1>
+
+      <p class=" text-slate-400 mt-[15px]">Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.</p>
+
+    </header>
+
+    <main class="w-full  flex flex-col justify-start items-start gap-[25px]">
+      
+      <details class="w-full text-left pb-[15px] border-b-[1px] border-gray-300">
+
+        <summary >What is Bookmark?</summary>
+
+        <p class="py-[25px] text-gray-500 text-sm leading-[28px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        </p>
+
+      </details>
+
+      <details class="w-full text-left pb-[15px] border-b-[1px] border-gray-300">
+
+        <summary>How can I request a new browser?</summary>
+
+
+        <p class="py-[25px] text-gray-500 text-sm leading-[28px]">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+        </p>
+
+      </details>
+
+
+      <details class="w-full text-left pb-[15px] border-b-[1px] border-gray-300">
+
+        <summary>Is there a mobile app?</summary>
+
+
+        <p class="py-[25px] text-gray-500 text-sm leading-[28px]">
+          Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+          sollicitudin ex et ultricies bibendum.
+        </p>
+
+      </details>
+
+      <details class="w-full text-left pb-[15px] border-b-[1px] border-gray-300">
+        <summary>What about other Chromium browsers?</summary>
+
+
+        <p class="py-[25px] text-gray-500 text-sm leading-[28px]">
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+          vitae neque eget nisl gravida pellentesque non ut velit.
+        </p>
+
+      </details>
+
+
+
+      <button class="mx-auto bg-blue-600 hover:bg-blue-500 px-[24px] py-[15px] rounded-lg font-bold text-sm text-white mt-[25px]">More Info</button>
+    </main>
+  </section>
+
+
+
+
+
+  <footer class="w-full flex flex-col justify-start items-center bg-blue-600  mt-[50px]">
+    <div class="px-[27px] w-full flex flex-col justify-start items-center">
+
+    
+    <p class=" mt-[73px] text-center text-white">35,000+ already joined</p>
+    
+    <h1 class="mt-[10px] text-2xl text-center text-white">Stay up-to-date with what we’re doing</h1>
+
+    
+    <div class="min-[751px]:w-1/2 w-full mx-auto mt-[30px] bg-red-500 rounded-[2px]">
+    <input class=" w-full py-[10px] px-[15px] rounded-[2px] outline-none" type="email" placeholder="enter your email address" name="email" id="email">      
+  </div>
+  <button id="submit" class="mt-[20px] min-[751px]:w-1/2 w-full text-center font-bold text-white bg-red-500 hover:bg-red-400 py-[12px] rounded-lg" type="submit">Contact Us</button>
+    
+  </div>
+    <nav class="mt-[35px] min-[751px]:h-[50px] min-[751px]:px-[20px] bg-blue-900 w-full flex max-[750px]:flex-col justify-start min-[751px]:justify-between items-center gap-[35px]">
+      <span class="max-[750px]:mt-[40px]"><img class="invert " src="./images/logo-bookmark.svg" alt="logo-bookmark"></span>
+      <ul class=" max-[750px]:w-full flex max-[750px]:flex-col justify-start items-center gap-[20px] text-xl text-white">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </ul>
+
+      <span class="max-[750px]:pb-[50px] max-[750px]:w-full flex justify-center items-center gap-[40px]">
+        <img src="./images/icon-facebook.svg" alt="facebook-link-logo">
+        <img src="./images/icon-twitter.svg" alt="twitter-link-logo">
+      </span>
+    </nav>
+
+  </footer>
+
+
+
+</body>
+
+</html>
